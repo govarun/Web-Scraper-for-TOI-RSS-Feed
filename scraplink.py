@@ -1,7 +1,7 @@
 import requests, sys
 from bs4 import BeautifulSoup
-data = requests.get("https://timesofindia.indiatimes.com/rss.cms")
-soup = BeautifulSoup(data.text, 'html.parser')
+data_raw = requests.get("https://timesofindia.indiatimes.com/rss.cms")
+soup = BeautifulSoup(data_raw.text, 'html.parser')
 
 # link = soup.a
 # print(link.get('href'))
