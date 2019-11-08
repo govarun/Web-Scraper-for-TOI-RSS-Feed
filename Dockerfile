@@ -1,5 +1,5 @@
 # Use an official Python runtime as a parent image
-FROM python:3.7.1-slim
+FROM python:3.7.3-slim
 
 # Set the working directory to /app
 WORKDIR /app
@@ -8,7 +8,7 @@ WORKDIR /app
 ADD . /app
 
 # Install any needed packages specified in requirements.txt
-RUN pip install -r requirements.txt
+RUN pip3 install -r requirements.txt
 
 # Make port 80 available to the world outside this container
 EXPOSE 80
